@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=t1wk=9umy@_pdc(i(x!!_)58@x)n@_sz7#s4eij68#-=1wkmf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-danfnkd-djangoblog-yesvsmrz6ws.ws.codeinstitute-ide.net",
@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://uhpoighl03p:gYLvk8VvWNDt@ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech/item_reach_vapor_407004"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
