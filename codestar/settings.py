@@ -31,6 +31,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "8000-danfnkd-djangoblog-yesvsmrz6ws.ws.codeinstitute-ide.net",
+    "localhost",
+    "127.0.0.1",
     ".herokuapp.com"
 ]
 
@@ -92,9 +94,8 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://*.codeinstitute-ide.net/",
-    "https://*.herokuapp.com",
-    "https://8000-danfnkd-djangoblog-yesvsmrz6ws.ws.codeinstitute-ide.net"
+    "https://8000-danfnkd-djangoblog-yesvsmrz6ws.ws.codeinstitute-ide.net",
+    "https://*.herokuapp.com"
 ]
 
 # Password validation
