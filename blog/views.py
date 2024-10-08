@@ -1,14 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from .models import Event
+from django.contrib import messages
+from .models import Post
 
-
-class EventsList(generic.ListView):
-
-
-    model = Event
-    template_name = "index.html"
-    paginate_by = 12
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1)
+    template_name = "blog/index.html"
+    paginate_by = 6
 
 
 def post_detail(request, slug):
