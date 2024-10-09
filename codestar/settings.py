@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-=t1wk=9umy@_pdc(i(x!!_)58@x)n@_sz7#s4eij68#-=1wkmf
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "8000-danfnkd-djangoblog-yesvsmrz6ws.ws.codeinstitute-ide.net",
+    "8000-danfnkd-djangoblog-6ahgy4ifyxb.ws.codeinstitute-ide.net",
     "localhost",
     "127.0.0.1",
     ".herokuapp.com"
